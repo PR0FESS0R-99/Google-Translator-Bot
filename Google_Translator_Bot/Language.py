@@ -1,6 +1,6 @@
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 
 LANGUAGE = InlineKeyboardMarkup( [[
-InlineKeyboardButton("English", callback_data='en'
+InlineKeyboardButton("English", callback_data='en')
 ]]
 )
