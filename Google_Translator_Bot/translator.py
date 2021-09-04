@@ -13,6 +13,6 @@ async def translate_msg(bot,update):
   translator_text = update.message.reply_to_message.text
   cbdata = update.data
   translator = Translator()
-  translated_msg = translator.translate(translator_text,lang_tgt=cbdata)
-  await update.message.edit(translation.text)
+  translated = translator.translate(translator_text,lang_tgt=cbdata)
+  await update.message.edit(translated.text)
   
