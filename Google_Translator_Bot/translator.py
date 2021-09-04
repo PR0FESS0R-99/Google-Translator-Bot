@@ -14,5 +14,5 @@ async def translate_msg(bot,update):
   cbdata = update.data
   translator = Translator()
   translated_msg = translator.translate(translator_text,lang_tgt=cbdata)
-  await update.message.edit(translated_msg)
+  await update.message.edit(translation.text)
   
