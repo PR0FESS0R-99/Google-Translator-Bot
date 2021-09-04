@@ -12,7 +12,7 @@ async def translator(client, message):
 
 
 @Client.on_callback_query()
-async def translate_text(bot,update):
+async def translate_msg(bot,update):
   translator_text = update.message.reply_to_message.text
   cb_data = update.data
 
