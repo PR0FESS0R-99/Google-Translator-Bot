@@ -1,19 +1,11 @@
-import pyrogram
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
-from google_trans_new import google_translator
-
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
+from googletrans import Translator
+from Google_Translator_Bot.Language import LANGUAGE
 
 
 @Client.on_message(filters.text & filters.private )
-def translation(client, message):
+async def echo(client, message):
  
  keybord = InlineKeyboardMarkup( [
         [
@@ -34,15 +26,18 @@ def translation(client, message):
  )
 
  
- message.reply_text("✔️Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord)
+ await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
+
     
-    
-@Client.on_callback_query()
+@app.on_callback_query()
 async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
-  cbdata = update.data
-  translator = google_translator()
-  translated_text = translator.translate(tr_text,lang_tgt=cbdata)
-  await update.message.edit(translated_text)
-  	
-  
+  cb_data = update.data
+  if cb_data== "page":
+  	await update.message.edit("Select language 👇",reply_markup = keybord)
+  elif cb_data == "page1":
+        await update.message.edit("Select language 👇",reply_markup = LANGUAGE)
+  else :
+       translator = Translator()  
+       translation = translator.translate(tr_text,dest=cb_data) 
+       await update.message.edit(translation.text)
