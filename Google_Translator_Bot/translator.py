@@ -5,12 +5,10 @@ from google_trans_new import google_translator
 
 @Client.on_message(filters.private & filters.text)
 async def translator(client, message):
-  
-message.reply_text(
-"Select Your language 👇",
-reply_to_message_id = message.message_id,
-reply_markup = LANGUAGE
-)
+    message.reply_text(
+    "Select Your language 👇",
+    reply_to_message_id = message.message_id,
+    reply_markup = LANGUAGE )
 
 @Client.on_callback_query()
 async def translate_text(bot,update):
