@@ -29,7 +29,7 @@ async def echo(client, message):
  await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
 
     
-@app.on_callback_query()
+@Client.on_callback_query()
 async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cb_data = update.data
