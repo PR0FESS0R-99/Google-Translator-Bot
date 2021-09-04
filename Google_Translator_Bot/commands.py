@@ -8,8 +8,8 @@ async def start_main(main, update):
                             reply_to_message_id = update.message_id,
                             parse_mode="markdown",
                             reply_markup=InlineKeyboardMarkup([[
-                            InlineKeyboardButton("🗣️ Support Group", url="t.me/Mo_Tech_Group"),
-                            InlineKeyboardButton("📦 Open Source", url="https://github.com/PR0FESS0R-99/Google-Translater-Bot")
+                            InlineKeyboardButton("Support Group", url="t.me/Mo_Tech_Group"),
+                            InlineKeyboardButton("Open Source", url="https://github.com/PR0FESS0R-99/Google-Translater-Bot")
                             ],[
                             InlineKeyboardButton("📢 Join Updates Channel 📢" ,url="t.me/Mo_Tech_YT")
                             ]])
