@@ -16,8 +16,8 @@ async def echo(client, message):
     
 @Client.on_callback_query()
 async def translate_text(bot,update):
-  tr_text = update.message.reply_to_message.text
+  translation_text = update.message.reply_to_message.text
   cb_data = update.data
   translator = Translator()  
-  translation = translator.translate(tr_text,dest=cb_data) 
+  translation = translator.translate(translation_text,dest=cb_data) 
   await update.message.edit(translation.text)
