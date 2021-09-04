@@ -11,3 +11,12 @@ async def start_main(main, update):
                             InlineKeyboardButton("📢 Join Updates Channel 📢" ,url="t.me/Mo_Tech_YT")
                             ]])
                             )
+@Client.on_message(filters.private & filters.command("about"))
+async def about_main(main, update):
+    await update.reply_text(Translation.ABOUT_MSG,
+                            reply_to_message_id = update.message_id,
+                            parse_mode="markdown",
+                            reply_markup=InlineKeyboardMarkup([[
+                            InlineKeyboardButton("📢 Join Updates Channel 📢" ,url="t.me/Mo_Tech_YT")
+                            ]])
+                            )
