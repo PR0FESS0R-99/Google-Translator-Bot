@@ -1,6 +1,16 @@
+import pyrogram
+import logging
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 from google_trans_new import google_translator
+
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+
 
 @Client.on_message(filters.text & filters.private )
 def translation(client, message):
