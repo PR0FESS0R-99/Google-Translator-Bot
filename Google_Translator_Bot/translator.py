@@ -2,14 +2,13 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 from googletrans import Translator
 from Google_Translator_Bot.Language import LANGUAGE
-
+from translation import Translation
 
 @Client.on_message(filters.text & filters.private )
 async def echo(client, message):
 
  
- await  message.reply_text(
-                           "Select language 👇",
+ await  message.reply_text(Translation.TRANSLATED_MSG,
                            reply_to_message_id = message.message_id,
                            reply_markup = LANGUAGE
                            ) 
