@@ -9,7 +9,7 @@ async def translator(client, message):
   if cb_data== "cb":
   	await update.message.edit("Select language 👇",reply_markup = LANGUAGE)   
   else :
-  translator = google_translator()
-  translated_msg = translator.translate(translator_text,lang_tgt=cbdata)
-  await update.message.edit(translated_msg)
+       translator = google_translator()
+       translated_msg = translator.translate(translator_text,lang_tgt=cbdata)
+       await update.message.edit(translated_msg)
   
