@@ -28,3 +28,4 @@ I can translate any language to you selected language
 
 ### Credits
 * [Pr0fess0r-99](https://github.com/PR0FESS0R-99)
+* [lntechnical2](https://github.com/lntechnical2)
