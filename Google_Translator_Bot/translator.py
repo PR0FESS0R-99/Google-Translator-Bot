@@ -6,7 +6,7 @@ from googletrans import Translator
 @Client.on_message(filters.private & filters.text)
 async def translator(client, message):
   translator_text = update.message.reply_to_message.text
-  if cb_data== "cb":
+  if cb_data== "page":
   	await update.message.edit("Select language 👇",reply_markup = LANGUAGE)   
   else :
        translator = Translator()
