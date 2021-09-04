@@ -33,11 +33,6 @@ async def echo(client, message):
 async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cb_data = update.data
-  if cb_data== "page":
-  	await update.message.edit("Select language 👇",reply_markup = keybord)
-  elif cb_data == "page1":
-        await update.message.edit("Select language 👇",reply_markup = LANGUAGE)
-  else :
-       translator = Translator()  
-       translation = translator.translate(tr_text,dest=cb_data) 
-       await update.message.edit(translation.text)
+  translator = Translator()  
+  translation = translator.translate(tr_text,dest=cb_data) 
+  await update.message.edit(translation.text)
