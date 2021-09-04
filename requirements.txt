@@ -1,4 +1,4 @@
 pyrogram
 tgcrypto
-googletrans
+google_trans_new
 requests
