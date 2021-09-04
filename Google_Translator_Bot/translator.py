@@ -4,11 +4,11 @@ from Google_Translator_Bot.Language import LANGUAGE
 from google_trans_new import google_translator
 
 @Client.on_message(filters.private & filters.text)
-async def translator(client, msg):
+async def translator(client, message):
   
-msg.reply_text(
+message.reply_text(
 "Select Your language 👇",
-reply_to_message_id = msg.message_id,
+reply_to_message_id = message.message_id,
 reply_markup = LANGUAGE
 )
 
