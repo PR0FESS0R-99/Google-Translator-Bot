@@ -7,7 +7,7 @@ from googletrans import Translator
 async def translator(client, message):
 
 
- message.reply_text("✔️Select your language to translate your text 👇",reply_to_message_id = message.message_id, reply_markup = LANGUAGE)
+ await  message.reply_text("✔️Select your language to translate your text 👇",reply_to_message_id = message.message_id, reply_markup = LANGUAGE)
     
     
 
