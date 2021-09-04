@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 
-LANGUAGE = InlineKeyboardMarkup([[
-
+LANGUAGE = InlineKeyboardMarkup(
+ [[
  InlineKeyboardButton("Afrikaans", callback_data='af')
  ],[
  InlineKeyboardButton("Albanian", callback_data='sq')
@@ -31,13 +31,13 @@ LANGUAGE = InlineKeyboardMarkup([[
  InlineKeyboardButton("Croatian",callback_data = "hr")
  ],[
  InlineKeyboardButton("Czech", callback_data = "cs")
- ],
+ ],[
  InlineKeyboardButton("Danish",callback_data = "da")
  ],[
  InlineKeyboardButton("Dutch",callback_data = "nl")
  ],[
  InlineKeyboardButton("Esperanto",callback_data = "eo")
-
+ ],[
  InlineKeyboardButton("English",callback_data = "en")
  ],[
  InlineKeyboardButton("Estonian",callback_data = "et")
