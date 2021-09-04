@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 from Google_Translator_Bot.Language import LANGUAGE
-from googletrans import Translator
+from google_trans_new import google_translator
 
 @Client.on_message(filters.private & filters.text)
 async def translator(client, message):
@@ -12,7 +12,7 @@ async def translator(client, message):
 async def translate_msg(bot,update):
   translator_text = update.message.reply_to_message.text
   cbdata = update.data
-  translator = Translator()
+  translator = google_translator()
   translated = translator.translate(translator_text,lang_tgt=cbdata)
   await update.message.edit(translated.text)
   
