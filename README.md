@@ -17,7 +17,8 @@
 
 <img src="https://github.com/Mo-Tech-MRK-YT/Mo-Tech-MRK-YT/blob/main/gifs/Hi.gif" width="20px"> Hey [Mo Tech](https://Telegram.dog/Mo_Tech_Group),
 
-I am simple Google Translater Bot \n I can translate any language to you selected language
+I am simple Google Translater Bot.
+I can translate any language to you selected language
  
   Team [Mo Tech](https://Telegram.dog/Mo_Tech_YT)
 
