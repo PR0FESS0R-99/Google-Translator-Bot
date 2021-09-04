@@ -10,9 +10,4 @@ async def start_main(main, update):
                             reply_markup=InlineKeyboardMarkup([[
                             InlineKeyboardButton("📢 Join Updates Channel 📢" ,url="t.me/Mo_Tech_YT")
                             ]])
-                            ) 
-                  
-
-
-
-  	
+                            )
