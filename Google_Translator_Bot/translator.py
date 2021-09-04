@@ -4,15 +4,14 @@ from Google_Translator_Bot.Language import LANGUAGE
 from google_trans_new import google_translator
 
 @Client.on_message(filters.private & filters.text)
-async def translator(client, message):
-
-  await message.reply_text("✔️Select your language to translate your text 👇",reply_to_message_id = message.message_id, reply_markup = LANGUAGE)
+def translation(client, message):
+  message.reply_text("✔️Select your language to translate your text 👇",reply_to_message_id = message.message_id, reply_markup = LANGUAGE)
 
 @Client.on_callback_query()
 async def translate_msg(bot,update):
   translator_text = update.message.reply_to_message.text
-  cbdata = update.data
+  cb_data = update.data
   translator = google_translator()
-  translated = translator.translate(translator_text,lang_tgt=cbdata)
-  await update.message.edit(translated.text)
+  translator_msg = translator.translate(translator_text,lang_tgt=cb_data)
+  await update.message.edit(translator_msg)
   
