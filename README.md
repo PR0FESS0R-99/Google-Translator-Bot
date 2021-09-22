@@ -27,5 +27,7 @@ I can translate any language to you selected language
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/Google-Translater-Bot)
 
 ### Credits
-* [Pr0fess0r-99](https://github.com/PR0FESS0R-99)
-* [lntechnical2](https://github.com/lntechnical2)
+
+* [Pr0fess0r-99](https://github.com/PR0FESS0R-99) 
+* [lntechnical2](https://github.com/lntechnical2) Translater mode added
+* [Shahsad-klr](https://github.com/shahsad-klr) Added Back To Language Button
