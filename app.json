@@ -1,6 +1,7 @@
 {
     "name": "Google Translator Bot",
     "description": "iam Google Translator Bot @pr0fess0r_99",
+    "stack": "container",
     "keywords": [
         "Telegram",
         "Google",
