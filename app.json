@@ -22,6 +22,14 @@
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": ""
+        },
+        "DEV_ID": {
+            "description": "Telegram Id @MT_ID_Bot",
+            "value": ""
+        },
+        "DATABASE": {
+            "description": "Video Link https://youtu.be/gBLTsH-IXr0",
+            "value": ""
         }
     },
     "buildpacks": [
