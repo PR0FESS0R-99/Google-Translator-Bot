@@ -7,7 +7,7 @@ broadcast_ids = {}
 from pyrogram import filters
 from pyrogram import Client as google_transletor_bot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from Google_Transletor_Bot.Language import BOT_LANGUAGE, GROUP_LANGUAGE
+from Google_Translator_Bot.Language import BOT_LANGUAGE, GROUP_LANGUAGE
 from translation import Translation
 from googletrans import Translator
 from config import Config
