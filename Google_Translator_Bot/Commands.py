@@ -2,8 +2,6 @@ import os, asyncio, aiofiles, aiofiles.os, datetime, traceback,random, string, t
 logger = logging.getLogger(__name__)
 from random import choice
 from Google_Translator_Bot.Database import Database
-db = Database()
-broadcast_ids = {}
 from pyrogram import filters
 from pyrogram import Client as google_transletor_bot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -12,21 +10,8 @@ from translation import Translation
 from googletrans import Translator
 from config import Config
 
-async def send_msg(user_id, message):
-    try:
-        await message.copy(chat_id=user_id)
-        return 200, None
-    except FloodWait as e:
-        await asyncio.sleep(e.x)
-        return send_msg(user_id, message)
-    except InputUserDeactivated:
-        return 400, f"{user_id} : deactivated\n"
-    except UserIsBlocked:
-        return 400, f"{user_id} : blocked the bot\n"
-    except PeerIdInvalid:
-        return 400, f"{user_id} : user id invalid\n"
-    except Exception as e:
-        return 500, f"{user_id} : {traceback.format_exc()}\n"
+db = Database()
+broadcast_ids = {}
 
 @google_transletor_bot.on_message(filters.private & filters.command("start"))
 async def start_main(main, update):
@@ -68,6 +53,21 @@ async def echo(client, message):
         quote = True
     )
 
+async def send_msg(user_id, message):
+    try:
+        await message.copy(chat_id=user_id)
+        return 200, None
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        return send_msg(user_id, message)
+    except InputUserDeactivated:
+        return 400, f"{user_id} : deactivated\n"
+    except UserIsBlocked:
+        return 400, f"{user_id} : blocked the bot\n"
+    except PeerIdInvalid:
+        return 400, f"{user_id} : user id invalid\n"
+    except Exception as e:
+        return 500, f"{user_id} : {traceback.format_exc()}\n"
 
 @google_transletor_bot.on_message(filters.private & filters.command("broadcast") & filters.reply)
 async def broadcast_(c, m):
