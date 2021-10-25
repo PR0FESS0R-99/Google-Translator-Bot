@@ -11,7 +11,6 @@ from googletrans import Translator
 from config import Config
 
 db = Database()
-broadcast_ids = {}
 
 @google_transletor_bot.on_message(filters.private & filters.command("start"))
 async def start_main(main, update):
@@ -52,6 +51,7 @@ async def echo(client, message):
         reply_markup = BOT_LANGUAGE,
         quote = True
     )
+broadcast_ids = {}
 
 async def send_msg(user_id, message):
     try:
