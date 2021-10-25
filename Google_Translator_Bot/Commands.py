@@ -44,6 +44,14 @@ async def echo(client, message):
         quote = True
     )
 
+@google_transletor_bot.on_message(filters.text & filters.private )
+async def echo(client, message): 
+    await message.reply_text(
+        Translation.TRANSLATED_MSG,
+        reply_markup = BOT_LANGUAGE,
+        quote = True
+    )
+
 broadcast_ids = {}
 
 async def send_msg(user_id, message):
