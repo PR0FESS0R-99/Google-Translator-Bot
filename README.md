@@ -4,13 +4,13 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/PR0FESS0R-99/Google-Translater-Bot/stargazers">
-    <img src="https://img.shields.io/github/stars/PR0FESS0R-99/Google-Translater-Bot?style=social">
+  <a href="https://github.com/PR0FESS0R-99/Google-Translator-Bot/stargazers">
+    <img src="https://img.shields.io/github/stars/PR0FESS0R-99/Google-Translator-Bot?style=social">
 
   </a>
   
-  <a href="https://github.com/PR0FESS0R-99/Google-Translater-Bot/fork">
-    <img src="https://img.shields.io/github/forks/PR0FESS0R-99/Google-Translater-Bot?label=Fork&style=social">
+  <a href="https://github.com/PR0FESS0R-99/Google-Translator-Bot/fork">
+    <img src="https://img.shields.io/github/forks/PR0FESS0R-99/Google-Translator-Bot?label=Fork&style=social">
 
   </a>  
 </p>
@@ -24,7 +24,7 @@ I can translate any language to you selected language
 
 # Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/Google-Translater-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/Google-Translator-Bot)
 
 ### Credits
 
