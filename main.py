@@ -3,7 +3,6 @@ from config import Config
 
 if __name__ == "__main__" :
 
-    )
     mt_botz = Client(
         "MT Google Translator Bot ",
         bot_token=Config.BOT_TOKEN,
