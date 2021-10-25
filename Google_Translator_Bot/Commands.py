@@ -44,7 +44,7 @@ async def echo(client, message):
         quote = True
     )
 
-@google_transletor_bot.on_message(filters.text & ~filters.private & ~filters.command(["start", "broadcast"]))
+@google_transletor_bot.on_message(filters.private & filters.text & ~filters.command(["start", "broadcast"]))
 async def echo(client, message): 
     await message.reply_text(
         Translation.TRANSLATED_MSG,
