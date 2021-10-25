@@ -1,7 +1,7 @@
 import os, asyncio, aiofiles, aiofiles.os, datetime, traceback,random, string, time, logging
 logger = logging.getLogger(__name__)
 from random import choice
-from Google_Transletor_Bot.Database import Database
+from Google_Translator_Bot.Database import Database
 db = Database()
 broadcast_ids = {}
 from pyrogram import filters
