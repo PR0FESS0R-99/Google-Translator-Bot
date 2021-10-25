@@ -52,15 +52,6 @@ async def start_main(main, update):
         )
     )
 
-
-@google_transletor_bot.on_message(filters.private & filters.command("tr"))
-async def echo(client, message): 
-    await message.reply_text(
-        Translation.TRANSLATED_MSG,
-        reply_markup = BOT_LANGUAGE,
-        quote = True
-    )
-
 @google_transletor_bot.on_message(filters.command("tr"))
 async def echo(client, message): 
     await message.reply_text(
@@ -68,6 +59,15 @@ async def echo(client, message):
         reply_markup = GROUP_LANGUAGE,
         quote = True
     )
+
+@google_transletor_bot.on_message(filters.text & filters.private )
+async def echo(client, message): 
+    await message.reply_text(
+        Translation.TRANSLATED_MSG,
+        reply_markup = BOT_LANGUAGE,
+        quote = True
+    )
+
 
 @google_transletor_bot.on_message(filters.private & filters.command("broadcast") & filters.reply)
 async def broadcast_(c, m):
