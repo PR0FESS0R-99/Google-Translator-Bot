@@ -23,6 +23,11 @@ I can translate any language to you selected language
  
   Team [Mo Tech](https://Telegram.dog/Mo_Tech_YT)
 
+# Tutorial Video 
+
+<a href="https://youtu.be/YwMrKN0voHM"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
+<a href="https://youtu.be/YwMrKN0voHM"><img src="https://img.shields.io/youtube/views/YwMrKN0voHM?style=social">
+
 # Deploy To Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/Google-Translator-Bot)
