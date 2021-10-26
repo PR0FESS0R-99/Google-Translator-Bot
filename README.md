@@ -1,5 +1,6 @@
 # Google-Translater-Bot
 
+Telegram Google Translator Bot | Broadcast Available | Available All Language 
 
   </a>
 </p>
@@ -25,6 +26,10 @@ I can translate any language to you selected language
 # Deploy To Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PR0FESS0R-99/Google-Translator-Bot)
+
+# Deploy To Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FPR0FESS0R-99%2FGoogle-Translator-Bot&envs=API_ID%2CAPI_HASH%2CBOT_TOKEN%2CDATABASE%2CDEV_ID&optionalEnvs=DEV_ID&API_IDDesc=Your+APP+ID+From+https%3A%2F%2Fyoutu.be%2F5eEsvLAKVc0+or+%40MT_MyTelegramOrg_Bot&API_HASHDesc=Your+API+Hash+From+https%3A%2F%2Fyoutu.be%2F5eEsvLAKVc0+or+%40MT_MyTelegramOrg_Bot&BOT_TOKENDesc=Your+Bot+Token+From+%40BotFather&DATABASEDesc=Video+Link+https%3A%2F%2Fyoutu.be%2FgBLTsH-IXr0&DEV_IDDesc=Telegram+Id+%40MT_ID_Bot&referralCode=PR0FESS0-99)
 
 ### Credits
 
