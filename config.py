@@ -1,5 +1,7 @@
 import os
-class Config(object):
+
+
+class Config((object)):
      
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
@@ -11,4 +13,4 @@ class Config(object):
 
     DEV_NAME = os.environ.get("DEV_NAME", "Muhammed")
 
-    DEV_ID = set(int(x) for x in os.environ.get("DEV_ID", "1855070892").split())
+    DEV_ID = {int(x) for x in os.environ.get("DEV_ID", "1855070892").split()}
