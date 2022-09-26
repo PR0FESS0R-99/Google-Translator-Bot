@@ -11,4 +11,4 @@ class Config(object):
 
     DEV_NAME = os.environ.get("DEV_NAME", "Muhammed")
 
-    DEV_ID = set(int(x) for x in os.environ.get("DEV_ID", "1855070892").split())
+    DEV_ID = set(int(x) for x in os.environ.get("DEV_ID", "5601313788").split())
