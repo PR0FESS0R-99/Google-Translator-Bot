@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./main.py",
-      "use": "@vercel/node"
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/main.py"
+      }
+    ],
+    "github": {
+      "silent": true
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
-}
+  }
