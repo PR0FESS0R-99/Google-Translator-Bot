@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "https://github.com/PR0FESS0R-99/Google-Translator-Bot",
-        "destination": "/main/"
+        "source": "/",
+        "destination": "/"
       }
     ],
     "github": {
